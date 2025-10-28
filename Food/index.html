@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FastBite — Bold, Modern Fast Food</title>
+    <meta name="description" content="Modern fast food landing page inspired by McDonald's and Jollibee. Bold red and yellow, glossy visuals, hero combo, responsive menu grid, and limited deals." />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark">🍟</span>
+          <span class="brand-name">FastBite</span>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+          <a class="btn btn-yellow header-cta" href="#order">Order Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="order">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">
+              The Ultimate <span>Combo</span>
+            </h1>
+            <p class="hero-sub">🔥 Juicy burgers. Golden fries. Ice-cold drinks. Served hot & fast in under 5 minutes!</p>
+            <div class="hero-features">
+              <div class="feature">
+                <span class="feature-icon">⚡</span>
+                <span class="feature-text">Lightning Fast</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🏆</span>
+                <span class="feature-text">Award Winning</span>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">🚚</span>
+                <span class="feature-text">Free Delivery</span>
+              </div>
+            </div>
+            <div class="hero-cta">
+              <a href="#menu" class="btn btn-yellow btn-lg pulse-btn">🍔 Order Now</a>
+              <a href="#deals" class="btn btn-ghost">🎯 View Deals</a>
+            </div>
+            <div class="hero-badges">
+              <span class="badge badge-new">✨ New</span>
+              <span class="badge badge-hot">🔥 Best Seller</span>
+              <span class="badge badge-limited">⏰ Limited Time</span>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="hero-product" id="heroParallax">
+              <img class="item burger" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Signature Burger" />
+              <img class="item fries" src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Fries" />
+              <img class="item drink" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Soft Drink" />
+              <div class="gloss"></div>
+            </div>
+            <div class="price-card">
+              <span class="price">₱199</span>
+              <span class="note">Burger + Fries + Drink</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promo Banner -->
+      <section class="promo-banner" id="deals">
+        <div class="container promo-inner">
+          <div class="promo-copy">
+            <h2>🎉 Limited Time: 2 for ₱299</h2>
+            <p>Pick any two signature burgers. Includes classic fries upgrade + FREE drink!</p>
+            <div class="promo-timer">
+              <span class="timer-label">⏰ Ends in:</span>
+              <div class="timer-display">
+                <span class="timer-unit">23<small>h</small></span>
+                <span class="timer-unit">45<small>m</small></span>
+                <span class="timer-unit">12<small>s</small></span>
+              </div>
+            </div>
+          </div>
+          <a href="#menu" class="btn btn-white btn-rounded glow-btn">🚀 Grab the Deal</a>
+        </div>
+      </section>
+
+      <!-- Menu Grid -->
+      <section class="menu" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">🍽️ Featured Menu</h2>
+            <p class="section-sub">High‑res favorites, cooked fresh. Tap to view details & nutritional info.</p>
+            <div class="menu-filters">
+              <button class="filter-btn active" data-filter="all">🍴 All Items</button>
+              <button class="filter-btn" data-filter="burgers">🍔 Burgers</button>
+              <button class="filter-btn" data-filter="sides">🍟 Sides</button>
+              <button class="filter-btn" data-filter="drinks">🥤 Drinks</button>
+              <button class="filter-btn" data-filter="desserts">🍦 Desserts</button>
+            </div>
+          </div>
+          <div class="grid">
+            <!-- Burger Items -->
+            <article class="card" data-category="burgers">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Classic Cheeseburger" />
+                <span class="tag tag-yellow">🔥 Popular</span>
+                <div class="card-overlay">
+                  <div class="nutrition-info">
+                    <span>520 cal</span>
+                    <span>25g protein</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Classic Cheeseburger</h3>
+                <p>100% beef patty, melted cheddar, pickles, and signature sauce.</p>
+                <div class="card-foot">
+                  <span class="price">₱129</span>
+                  <button class="btn btn-red btn-sm add-btn" data-item="Classic Cheeseburger">🛒 Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="burgers">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Double Stack" />
+                <span class="tag tag-yellow">✨ New</span>
+                <div class="card-overlay">
+                  <div class="nutrition-info">
+                    <span>720 cal</span>
+                    <span>40g protein</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Double Stack</h3>
+                <p>Two juicy patties, double cheese, and toasted sesame bun.</p>
+                <div class="card-foot">
+                  <span class="price">₱179</span>
+                  <button class="btn btn-red btn-sm add-btn" data-item="Double Stack">🛒 Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="sides">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Crispy Fries" />
+                <div class="card-overlay">
+                  <div class="nutrition-info">
+                    <span>320 cal</span>
+                    <span>4g protein</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Crispy Fries</h3>
+                <p>Golden, crispy, lightly salted — the perfect side.</p>
+                <div class="card-foot">
+                  <span class="price">₱59</span>
+                  <button class="btn btn-red btn-sm add-btn" data-item="Crispy Fries">🛒 Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="drinks">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Iced Cola" />
+                <div class="card-overlay">
+                  <div class="nutrition-info">
+                    <span>150 cal</span>
+                    <span>0g protein</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Iced Cola</h3>
+                <p>Served extra cold with the perfect fizz.</p>
+                <div class="card-foot">
+                  <span class="price">₱39</span>
+                  <button class="btn btn-red btn-sm add-btn" data-item="Iced Cola">🛒 Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="burgers">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Chicken Joy Bites" />
+                <span class="tag tag-red">🌶️ Hot</span>
+                <div class="card-overlay">
+                  <div class="nutrition-info">
+                    <span>480 cal</span>
+                    <span>32g protein</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Chicken Joy Bites</h3>
+                <p>Crispy, juicy chicken bits with signature spice.</p>
+                <div class="card-foot">
+                  <span class="price">₱149</span>
+                  <button class="btn btn-red btn-sm add-btn" data-item="Chicken Joy Bites">🛒 Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="desserts">
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Sundae Swirl" />
+                <div class="card-overlay">
+                  <div class="nutrition-info">
+                    <span>280 cal</span>
+                    <span>6g protein</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3>Sundae Swirl</h3>
+                <p>Rich vanilla soft-serve with chocolate drizzle.</p>
+                <div class="card-foot">
+                  <span class="price">₱69</span>
+                  <button class="btn btn-red btn-sm add-btn" data-item="Sundae Swirl">🛒 Add</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About / Brand strip -->
+      <section class="about" id="about">
+        <div class="container about-inner">
+          <div class="about-copy">
+            <h2>Bold flavors. Big smiles.</h2>
+            <p>Inspired by iconic fast food culture with a premium twist. We craft bold, craveable classics using quality ingredients — served hot in minutes.</p>
+          </div>
+          <ul class="about-stats">
+            <li>
+              <span class="kpi">+250k</span>
+              <span class="kpi-note">Happy orders</span>
+            </li>
+            <li>
+              <span class="kpi">24/7</span>
+              <span class="kpi-note">Always open</span>
+            </li>
+            <li>
+              <span class="kpi">30min</span>
+              <span class="kpi-note">Fast delivery</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark">🍔</span>
+          <span class="brand-name">FastBite</span>
+        </div>
+        <div class="footer-right">
+          <small>© <span id="year"></span> FastBite Co. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
